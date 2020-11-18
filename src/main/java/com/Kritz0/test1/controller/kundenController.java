@@ -34,11 +34,6 @@ public class kundenController {
         return kundenRepository.findAll();
     }
 
-//	@GetMapping
-//	public List<Country> listCountry(@RequestParam Integer countryPopulation){
-//		return countryRepository.findOne(countryPopulation);
-//	}
-
     @PostMapping
     public void addCountry(@RequestBody kunde kunde) {
         kundenRepository.save(kunde);
